@@ -388,7 +388,9 @@ $$
 
 也常简写为 $X(\omega)$，但写成 $X(e^{j\omega})$ 更能体现它位于复平面的单位圆上。
 
-DTFT 的核心含义：把序列表示成不同数字频率复指数 $e^{j\omega n}$ 的连续叠加，$X(e^{j\omega})$ 描述各频率分量的复权重。
+DTFT 的核心含义：把序列表示成不同数字频率复指数 $e^{j\omega n}$ 的连续叠加。
+
+其中， $X(e^{j\omega})$ 描述各频率分量的复权重。
 
 由于
 
@@ -496,10 +498,10 @@ $$
 
 $$
 \angle X(e^{j\omega})
-=-\operatorname{atan2}\bigl(a\sin\omega,\,1-a\cos\omega\bigr).
+=-\mathrm{atan2}\bigl(a\sin\omega,\,1-a\cos\omega\bigr).
 $$
 
-使用 $\operatorname{atan2}$ 比普通反正切更可靠，因为它能够正确判断所在象限。
+使用 $\mathrm{atan2}$ 比普通反正切更可靠，因为它能够正确判断所在象限。
 
 ---
 
@@ -612,8 +614,8 @@ $$
 
 因此：
 
-- $\operatorname{Re}\{X(e^{j\omega})\}$ 是偶函数；
-- $\operatorname{Im}\{X(e^{j\omega})\}$ 是奇函数；
+- $\mathrm{Re}\{X(e^{j\omega})\}$ 是偶函数；
+- $\mathrm{Im}\{X(e^{j\omega})\}$ 是奇函数；
 - $|X(e^{j\omega})|$ 是偶函数；
 - 相位在避开零点并正确处理 $2\pi$ 等价后通常表现为奇函数。
 
